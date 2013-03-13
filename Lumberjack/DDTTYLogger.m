@@ -55,7 +55,7 @@ static DDTTYLogger *sharedInstance;
 	
 	if ((self = [super init]))
 	{
-		isaTTY = isatty(STDERR_FILENO);
+		isaTTY = YES; //isatty(STDERR_FILENO);
 		
 		if (isaTTY)
 		{
